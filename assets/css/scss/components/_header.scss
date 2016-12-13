@@ -21,6 +21,7 @@
             display: block;
             height: 50px;
             width: 88px;
+            background: url("../../images/douyu-logo.png") left center no-repeat;
         }
 
         .head-nav {
@@ -37,6 +38,12 @@
                 margin: 0 8px;
                 text-align: center;
                 position: relative;
+
+                &:hover {
+                    a {
+                        color: #ff630e;
+                    }
+                }
 
                 &.current {
                     a{
