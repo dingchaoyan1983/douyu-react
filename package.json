@@ -4,26 +4,26 @@
   "description": "www.douyu.com react markup",
   "main": "index.js",
   "scripts": {
-    "start": "./node_modules/.bin/webpack-dev-server --config=./webpack.config.js --progress --colors",
-    "build": "./node_modules/.bin/better-npm-run build",
-    "build:watch": "./node_modules/.bin/better-npm-run build:watch",
-    "build:prod": "./node_modules/.bin/better-npm-run build:prod"
+    "server": "./node_modules/.bin/webpack-dev-server --config=./webpack.config.js --progress --colors",
+    "dev": "./node_modules/.bin/better-npm-run build",
+    "watch": "./node_modules/.bin/better-npm-run build:watch",
+    "prod": "./node_modules/.bin/better-npm-run build:prod"
   },
   "betterScripts": {
     "build": {
-      "command": "webpack --progress --colors --display-error-details --display-modules",
+      "command": "webpack --progress --colors --display-error-details",
       "env": {
         "NODE_ENV": "development"
       }
     },
     "build:watch": {
-      "command": "webpack --watch --progress --colors --display-error-details --display-modules",
+      "command": "webpack --watch --progress --colors --display-error-details",
       "env": {
         "NODE_ENV": "development"
       }
     },
     "build:prod": {
-      "command": "webpack --progress --colors --display-error-details --display-modules",
+      "command": "webpack --progress --colors --display-error-details",
       "env": {
         "NODE_ENV": "production"
       }

@@ -58,7 +58,12 @@
                     color: #444;
                 }
 
-                .assort {
+                &.assort {
+                    &.open {
+                        .a-pop{
+                            display: block;
+                        }
+                    }
                     i {
                         position: absolute;
                         right: -12px;
@@ -75,6 +80,73 @@
                         -moz-transition: all .3s ease-in-out;
                         -webkit-transition: all .3s ease-in-out;
                     }
+
+                    .a-pop{
+                        padding: 10px 15px 12px;
+                        width: 247px;
+                        position: absolute;
+                        right: -107px;
+                        top: 40px;
+                        display: none;
+                        background: #fff;
+                        border: 1px solid #ddd;
+                        border-bottom-left-radius: 4px;
+                        border-bottom-right-radius: 4px;
+
+                        >li {
+                            width: 14px;
+                            height: 14px;
+                            position: absolute;
+                            top: -9px;
+                            right: 50%;
+                            margin-right: -7px;
+                        }
+
+                        .a-list {
+                            >h3 {
+                                margin: 8px 0 4px;
+                                color: #444;
+                                font-size: 14px;
+                                line-height: 22px;
+                                font-weight: 700;
+                                font-family: "microsoft yahei";
+                                text-align: left;
+                            }
+                            .btns {
+                                width: 250px;
+                                overflow: hidden;
+
+                                li{
+                                    float: left;
+                                    padding: 0 3px 3px 0;
+
+                                    a {
+                                        display: block;
+                                        padding: 0;
+                                        width: 80px;
+                                        height: 24px;
+                                        background: #ececec;
+                                        border: none;
+                                        font-size: 12px;
+                                        line-height: 24px;
+                                        color: #797979;
+                                        text-overflow: ellipsis;
+                                        white-space: nowrap;
+                                        overflow: hidden;
+                                        text-align: center;
+                                        border-radius: 3px;
+
+                                        &:hover {
+                                            border: none;
+                                            background: #f70;
+                                            color: #FFF;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
                 }
             }
         }

@@ -68,8 +68,7 @@ var config = {
       'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'production')
     }),
     new webpack.HotModuleReplacementPlugin(),
-    new ExtractTextPlugin('[name].[hash].css'),
-    new webpack.BannerPlugin('This file is created by dding')
+    new ExtractTextPlugin('[name].[hash].css')
   ],
   devServer: {
     inline: true,
@@ -85,7 +84,8 @@ if (process.env.NODE_ENV === 'production') {
       dead_code: true,
       warnings: false
     },
-    sourceMap: false
+    sourceMap: false,
+    comments: false
   }));
 }
 
