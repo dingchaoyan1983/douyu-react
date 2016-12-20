@@ -16,27 +16,15 @@ export default class NavItem extends Component {
     }
 
     render() {
-        const { hasDropdown } = this.props;
-        let dropdown = null;
         let navItem = null;
 
-        if(hasDropdown) {
-            navItem = <li className={classname('fl', this.props.className, this.state.expanded ? 'open' : '')} onMouseEnter={this.onMouseEnter} onMouseLeave={this.onMouseLeave}>
+        if(React.Children.count(this.props.children)) {
+            navItem = <li className={classname('fl', 'assort' ,this.props.className, this.state.expanded ? 'open' : '')} onMouseEnter={this.onMouseEnter} onMouseLeave={this.onMouseLeave}>
                         <a href={this.props.href}>{this.props.name}</a>
                         <i></i>
                         <div className="a-pop">
                             <i></i>
-                            <div className="a-list">
-                                <h3>热门分类</h3>
-                                <ul className="btns">
-                                    <li><a target="_blank" className="btn" href="https://www.douyu.com/directory/game/LOL">英雄联盟</a></li>
-                                    <li><a target="_blank" className="btn" href="https://www.douyu.com/directory/game/How">炉石传说</a></li>
-                                    <li><a target="_blank" className="btn" href="https://www.douyu.com/directory/game/DOTA2">DOTA2</a></li>
-                                    <li><a target="_blank" className="btn" href="https://www.douyu.com/directory/game/TVgame">主机游戏</a></li>
-                                    <li><a target="_blank" className="btn" href="https://www.douyu.com/directory/game/Overwatch">守望先锋</a></li>
-                                    <li><a target="_blank" className="btn" href="https://www.douyu.com/directory/game/yys">阴阳师</a></li>
-                                </ul>
-                            </div>
+                            {this.props.children}
                         </div>
                       </li>
         } else {
@@ -70,6 +58,5 @@ export default class NavItem extends Component {
 NavItem.defaultProps = {
         className: '',
         href: 'http://www.baidu.com',
-        name: 'untitiled',
-        hasDropdown: false
+        name: 'untitiled'
 };
