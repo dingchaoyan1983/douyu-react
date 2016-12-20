@@ -62,6 +62,16 @@
                     &.open {
                         .a-pop{
                             display: block;
+
+                            >i {
+                                width: 14px;
+                                height: 14px;
+                                position: absolute;
+                                top: -9px;
+                                right: 50%;
+                                margin-right: -7px;
+                                background: url(../../images/arrow-top.png) no-repeat;
+                            }
                         }
 
                         i {
