@@ -162,6 +162,41 @@
                 .icofont {
                     background-position: 0 -51px;
                 }
+
+                .h-pop {
+                    width: 174px;
+                    display: none;
+                    position: absolute;
+                    right: -49px;
+                    top: 50px;
+                    background: #fff;
+                    border: 1px solid #ddd;
+                    border-bottom-right-radius: 4px;
+                    border-bottom-left-radius: 4px;  
+
+                    >i {
+                        right: 80px;
+                    }  
+
+                    li {
+                        text-align: center;
+                        border-bottom: 1px solid #e8e8e8;
+
+                        a{
+                            display: block;
+                            height: 42px;
+                            line-height: 42px;
+                            font-size: 14px;
+                            color: #444;
+                            border-left: 3px solid transparent;
+
+                            &:hover {
+                                color: #f70;
+                                border-color: #f70;
+                            }
+                        }
+                    }
+                }
             }
         }
     }

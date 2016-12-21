@@ -19,6 +19,15 @@ export default function HeaderOther(props) {
                     </ul>
                 </ActionIcon>
                 <ActionIcon action="follow" text="关注"/>
-                <ActionIcon action="download" text="下载"/>
+                <ActionIcon action="download" text="下载">
+                    <ul>
+                      	<li>
+                      		<a href="/client?platform=2" target="_blank">App下载</a>
+                      	</li>
+                      	<li>
+                      		<a href="/client?platform=1" target="_blank">主播工具下载</a>
+                      	</li>
+                  	</ul>
+                </ActionIcon>
             </div>
 }
