@@ -1,0 +1,124 @@
+#left {
+    top: 51px;
+}
+
+.left-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: #2c2c2c;
+    height: 100%;
+    z-index: 1;
+
+    .left-btn {
+        position: fixed;
+        top: 50%;
+        left: 244px;
+        z-index: 10;
+        overflow: hidden;
+        cursor: pointer;
+        width: 15px;
+        height: 150px;
+        margin-top: -50px;
+        display: block;
+
+        span {
+            width: 15px;
+            height: 150px;
+            position: absolute;
+            top: 0;
+            left: -1px;
+            display: block;
+            background: url(../../images/side-left-shrink.png) no-repeat;
+
+            &:hover {
+                background-position: -22px 0;
+            }
+        }
+    }
+
+    .left-big {
+        width: 244px;
+        color: #c6c6c6;
+    }
+
+    .channel-cate {
+        ul {
+            width: 233px;
+
+            li {
+                height: 38px;
+                line-height: 38px;
+                border-bottom: 1px solid #272727;
+                width: 240px;
+
+                a {
+                    display: block;
+                    height: 37px;
+                    font-size: 15px;
+                    color: #c6c6c6;
+                    padding-left: 28px;
+                    border-bottom: 1px solid #313131;
+
+                    &:hover {
+                        background: #f60;
+                        color: #fff;
+
+                        span {
+                            color: #fff;
+                        }
+
+                        .icon-live {
+                            background-position: -31px 0;
+                        }
+                    }
+                    
+                    .icon {
+                        display: inline-block;
+                        background: url(../../images/side-list-icon.png) -500px -500px no-repeat;
+                        width: 20px;
+                        height: 20px;
+                        overflow: hidden;
+                        float: left;
+                        margin-right: 18px;
+                        margin-top: 8px;
+                    }
+
+                    .icon-live {
+                        background-position: -63px 0;
+                    }
+
+                    .icon-game {
+                        background-position: 0 -26px;
+                    }
+
+                    .icon-rank {
+                        background-position: 1px -206px;
+                    }
+
+                    .icon-focus {
+                        background-position: 1px -50px;
+                    }
+
+                    .icon-collect {
+                        background-position: 1px -80px;
+                    }
+                }
+
+                &.cur {
+                    background: #282828;
+
+                    span {
+                        color: #f60;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.channel-catelist-resize {
+    height: 33px!important;
+    line-height: 33px!important;
+}
