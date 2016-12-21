@@ -160,6 +160,19 @@
                                 }
                             }
                         }
+
+                       .btn-all {
+                            >a {
+                                display: block;
+                                height: 24px;
+                                background: #f70;
+                                line-height: 24px;
+                                color: #FFF;
+                                text-align: center;
+                                font-size: 14px;
+                                font-weight: 700;
+                            }
+                        }
                     }
                 }
             }

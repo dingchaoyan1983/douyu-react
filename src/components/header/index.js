@@ -6,6 +6,7 @@ export default function Header(props) {
                 <div className="head w1366head">
                     <a className="head-logo fl" href="https://www.douyu.com/"></a>
                     <Nav/>
+                    
                 </div>
             </div>)
 }
