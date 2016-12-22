@@ -9,13 +9,12 @@ export default class SidebarTabs extends React.Component {
         };
 
         this.onClick = this.onClick.bind(this);
-
-
     }
 
     render() {
         const tabNavs = React.Children.map(this.props.children, (child, index) => {
             const {name='untitled', className=''} = child.props;
+            
             return {
                 name,
                 index,
@@ -51,4 +50,4 @@ export default class SidebarTabs extends React.Component {
 
 SidebarTabs.defaultProps = {
     initAcitveTabIndex: 0
-}
+};
