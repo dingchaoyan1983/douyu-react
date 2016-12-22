@@ -72,6 +72,22 @@
                         .icon-live {
                             background-position: -31px 0;
                         }
+
+                        .icon-game {
+                            background-position: -31px -26px;
+                        }
+
+                        .icon-rank {
+                            background-position: -31px -206px;
+                        }
+
+                        .icon-focus {
+                            background-position: -31px -50px;
+                        }
+
+                        .icon-collect {
+                            background-position: -31px -80px;
+                        }
                     }
                     
                     .icon {
@@ -86,7 +102,7 @@
                     }
 
                     .icon-live {
-                        background-position: -63px 0;
+                        background-position: 0 0;
                     }
 
                     .icon-game {
@@ -111,6 +127,26 @@
 
                     span {
                         color: #f60;
+                    }
+
+                    .icon-live {
+                        background-position: -63px 0;
+                    }
+
+                    .icon-game {
+                        background-position: -63px -26px;
+                    }
+
+                    .icon-rank {
+                        background-position: -63px -206px;
+                    }
+
+                    .icon-focus {
+                        background-position: -63px -50px;
+                    }
+
+                    .icon-collect {
+                        background-position: -63px -80px;
                     }
                 }
             }
