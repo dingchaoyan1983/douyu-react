@@ -19,7 +19,7 @@ export default function Sidebar(props) {
                             <Channel text="頁游中心" iconClassName="icon-collect"/>
                         </SelectStateManager>
                     </div>
-                    <SidebarTabs>
+                    <SidebarTabs initAcitveTabIndex={1}>
                         <SidebarTab name="栏目" className="icon-column">
                             <dl>
                                 <dt className="cur">

@@ -12,6 +12,7 @@ export default class SidebarTabs extends React.Component {
     }
 
     render() {
+        console.log(this.state.activeTabIndex);
         const tabNavs = React.Children.map(this.props.children, (child, index) => {
             const {name='untitled', className=''} = child.props;
             
@@ -22,9 +23,9 @@ export default class SidebarTabs extends React.Component {
             }
         });
 
-        const children = React.Children.map(this.props.children, (child, index) => {
+        const children = React.Children.map(this.props.children, function(child, index){
             return React.cloneElement(child, {selected: index === this.state.activeTabIndex});
-        });
+        }.bind(this));
 
         return <div className="leftnav-cate">
                     <div className="r-tit">
