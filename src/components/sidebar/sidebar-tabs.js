@@ -12,7 +12,6 @@ export default class SidebarTabs extends React.Component {
     }
 
     render() {
-        console.log(this.state.activeTabIndex);
         const tabNavs = React.Children.map(this.props.children, (child, index) => {
             const {name='untitled', className=''} = child.props;
             
