@@ -56,6 +56,7 @@ var config = {
       hash: false,
       filename: 'index.html',
       inject: 'body',
+      favicon: path.join(__dirname, src, 'favicon.ico'),
       minify: {
         collapseWhitespace: false
       }

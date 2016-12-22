@@ -1,4 +1,6 @@
 import React from 'react';
+import Channel from './channel';
+import SelectStateManager from 'src/components/common/select-state-manager';
 
 export default function Sidebar(props) {
     return <div id="left" className="left-menu">
@@ -7,36 +9,13 @@ export default function Sidebar(props) {
                 </a>
                 <div className="left-big">
                     <div className="channel-cate">
-                        <ul>
-                            <li className="cur channel-catelist-resize">
-                                <a className="cur channel-catelist-resize" href="/directory/all"> <i className="icon icon-live"></i>
-                                    <span>全部直播</span>
-                                </a>
-                            </li>
-                            <li className="channel-catelist-resize">
-                                <a href="/directory" className="channel-catelist-resize"> <i className="icon icon-game"></i>
-                                    <span>全部分类</span>
-                                </a>
-                            </li>
-                            <li className="rank  channel-catelist-resize">
-                                <a href="/directory/rank_list/game" className="channel-catelist-resize">
-                                    <i className="icon icon-rank"></i>
-                                    <span>排行榜</span>
-                                </a>
-                            </li>
-                            <li className="follow  channel-catelist-resize">
-                                <a href="/room/my_follow" className="channel-catelist-resize">
-                                    <i className="icon icon-focus"></i>
-                                    <span>我的关注</span>
-                                </a>
-                            </li>
-                            <li className="channel-catelist-resize">
-                                <a href="http://wan.douyu.com/" target="_blank" className="channel-catelist-resize">
-                                    <i className="icon icon-collect"></i>
-                                    <span>页游中心</span>
-                                </a>
-                            </li>
-                        </ul>
+                        <SelectStateManager>
+                            <Channel text="全部直播"  iconClassName="icon-live"/>
+                            <Channel text="全部分类" iconClassName="icon-game"/>
+                            <Channel text="排行榜" iconClassName="icon-rank"/>
+                            <Channel text="我的关注" iconClassName="icon-focus"/>
+                            <Channel text="頁游中心" iconClassName="icon-collect"/>
+                        </SelectStateManager>
                     </div>
                 </div>
            </div>
