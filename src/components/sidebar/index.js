@@ -80,7 +80,7 @@ export default function Sidebar(props) {
                             <Channel text="頁游中心" iconClassName="icon-collect"/>
                         </SelectStateManager>
                     </div>
-                    <SidebarTabs initAcitveTabIndex={1}>
+                    <SidebarTabs initAcitveTabIndex={0}>
                         <SidebarTab name="栏目" className="icon-column">
                             {
                                 columnBoards.map(({header, items}) => <Board header={header} items={items}/>)

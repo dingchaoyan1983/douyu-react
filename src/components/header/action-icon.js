@@ -1,7 +1,9 @@
 import React from 'react';
 import classname from 'classname';
 
-export default class ActionIcon extends React.Component {
+const {Children, Component} = React;
+
+export default class ActionIcon extends Component {
     constructor(props, context) {
         super(props, context);
         this.state = {
@@ -20,7 +22,7 @@ export default class ActionIcon extends React.Component {
                     <span className="h-txt">{text}</span>
                   </div> 
 
-        if (React.Children.count(children)) {
+        if (Children.count(children)) {
             dom = <div className={classname(`o-${action}`, 'fl', this.state.expanded ? 'open' : '')} onMouseEnter={this.onMouseEnter} onMouseLeave={this.onMouseLeave}>
                     <span className="icofont h-ico"></span>
                     <span className="h-txt">{text}</span>

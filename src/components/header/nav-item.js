@@ -1,7 +1,7 @@
 import React from 'react';
 import classname from 'classname';
 
-const {Component} = React;
+const {Component, Children} = React;
 
 export default class NavItem extends Component {
     constructor(props, context) {
@@ -18,7 +18,7 @@ export default class NavItem extends Component {
     render() {
         let navItem = null;
 
-        if(React.Children.count(this.props.children)) {
+        if(Children.count(this.props.children)) {
             navItem = <li className={classname('fl', 'assort' ,this.props.className, this.state.expanded ? 'open' : '')} onMouseEnter={this.onMouseEnter} onMouseLeave={this.onMouseLeave}>
                         <a href={this.props.href}>{this.props.name}</a>
                         <i></i>
