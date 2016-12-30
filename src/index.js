@@ -4,6 +4,6 @@ import 'assets/css/base.css';
 import 'assets/css/scss/index.scss';
 import Router from './router';
 
-const rootId = 'container';
+const ROOT = 'container';
 
-ReactDOM.render(<Router/>, document.getElementById(rootId))
+ReactDOM.render(<Router/>, document.getElementById(ROOT));
