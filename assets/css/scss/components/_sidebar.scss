@@ -61,35 +61,6 @@
                     padding-left: 28px;
                     border-bottom: 1px solid #313131;
 
-                    &:hover {
-                        background: #f60;
-                        color: #fff;
-
-                        span {
-                            color: #fff;
-                        }
-
-                        .icon-live {
-                            background-position: -31px 0;
-                        }
-
-                        .icon-game {
-                            background-position: -31px -26px;
-                        }
-
-                        .icon-rank {
-                            background-position: -31px -206px;
-                        }
-
-                        .icon-focus {
-                            background-position: -31px -50px;
-                        }
-
-                        .icon-collect {
-                            background-position: -31px -80px;
-                        }
-                    }
-                    
                     .icon {
                         display: inline-block;
                         background: url(../../images/side-list-icon.png) -500px -500px no-repeat;
@@ -120,33 +91,63 @@
                     .icon-collect {
                         background-position: 1px -80px;
                     }
-                }
 
-                &.cur {
-                    background: #282828;
+                    &.cur {
+                        background: #282828;
 
-                    span {
-                        color: #f60;
+                        span {
+                            color: #f60;
+                        }
+
+                        .icon-live {
+                            background-position: -63px 0;
+                        }
+
+                        .icon-game {
+                            background-position: -63px -26px;
+                        }
+
+                        .icon-rank {
+                            background-position: -63px -206px;
+                        }
+
+                        .icon-focus {
+                            background-position: -63px -50px;
+                        }
+
+                        .icon-collect {
+                            background-position: -63px -80px;
+                        }
+
                     }
 
-                    .icon-live {
-                        background-position: -63px 0;
-                    }
+                    &:hover {
+                        background: #f60;
+                        color: #fff;
 
-                    .icon-game {
-                        background-position: -63px -26px;
-                    }
+                        span {
+                            color: #fff;
+                        }
 
-                    .icon-rank {
-                        background-position: -63px -206px;
-                    }
+                        .icon-live {
+                            background-position: -31px 0;
+                        }
 
-                    .icon-focus {
-                        background-position: -63px -50px;
-                    }
+                        .icon-game {
+                            background-position: -31px -26px;
+                        }
 
-                    .icon-collect {
-                        background-position: -63px -80px;
+                        .icon-rank {
+                            background-position: -31px -206px;
+                        }
+
+                        .icon-focus {
+                            background-position: -31px -50px;
+                        }
+
+                        .icon-collect {
+                            background-position: -31px -80px;
+                        }
                     }
                 }
             }

@@ -72,13 +72,13 @@ export default function Sidebar(props) {
                 </a>
                 <div className="left-big">
                     <div className="channel-cate">
-                        <SelectStateManager>
+                        <ul>
                             <Channel text="全部直播"  iconClassName="icon-live" to="all-lives"/>
                             <Channel text="全部分类" iconClassName="icon-game" to="all-categories"/>
                             <Channel text="排行榜" iconClassName="icon-rank" to="ranking-list"/>
                             <Channel text="我的关注" iconClassName="icon-focus" to="my-focus"/>
                             <Channel text="頁游中心" iconClassName="icon-collect" to="webgame-center"/>
-                        </SelectStateManager>
+                        </ul>
                     </div>
                     <SidebarTabs initAcitveTabIndex={0}>
                         <SidebarTab name="栏目" className="icon-column">
