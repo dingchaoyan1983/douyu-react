@@ -1,5 +1,5 @@
 # douyu-react
-[douyu website](https://www.douyu.com)  which is written in [React](https://facebook.github.io/react/), JUST FOR FUN!
+**[douyu website](https://www.douyu.com)**  which is written in **[React](https://facebook.github.io/react/)**, *JUST FOR FUN!*
 
 ## Setup
 
