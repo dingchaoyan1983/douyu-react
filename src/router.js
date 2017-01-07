@@ -1,5 +1,5 @@
 import React from 'react';
-import { Router, Route, hashHistory, IndexRoute, Redirect, IndexRedirect } from 'react-router';
+import { Router, Route, hashHistory, Redirect, IndexRedirect } from 'react-router';
 import App from './app';
 import AllLives from './components/mainbody/all-lives';
 import AllCategories from './components/mainbody/all-categories';
@@ -17,7 +17,6 @@ export default function router(props) {
                 <Route path="ranking-list" component={RankingList}/>
                 <Route path="my-focus" component={MyFocus}/>
                 <Route path="webgame-center" component={WebgameCenter}/>
-
              </Route>
           </Router>
 }
