@@ -1,22 +1,46 @@
 import React from 'react';
 import { Router, Route, hashHistory, Redirect, IndexRedirect } from 'react-router';
-import App from './app';
-import AllLives from './components/mainbody/all-lives';
-import AllCategories from './components/mainbody/all-categories';
-import RankingList from './components/mainbody/ranking-list';
-import MyFocus from './components/mainbody/my-focus';
-import WebgameCenter from './components/mainbody/webgame-center';
 
 export default function router(props) {
     return <Router history={hashHistory}>
-             <Route path="/" component={App}>
+             <Route path="/" getComponent={(nextState, cb) => {
+                 require.ensure([], function() {
+                        let App = require('./app').default
+                        cb(null, App);
+                 });
+             }}>
                 <IndexRedirect  to="all-lives"/>
                 <Redirect path="index" to="all-lives"/>
-                <Route path="all-lives" component={AllLives}/>
-                <Route path="all-categories" component={AllCategories}/>
-                <Route path="ranking-list" component={RankingList}/>
-                <Route path="my-focus" component={MyFocus}/>
-                <Route path="webgame-center" component={WebgameCenter}/>
+                <Route path="all-lives" getComponent={(nextState, cb) => {
+                    require.ensure([], function() {
+                        let AllLives = require('./components/mainbody/all-lives').default
+                        cb(null, AllLives);
+                 });
+                }}/>
+                <Route path="all-categories" getComponent={(nextState, cb) => {
+                    require.ensure([], function() {
+                        let AllCategories = require('./components/mainbody/all-categories').default;
+                        cb(null, AllCategories);
+                    });
+                }}/>
+                <Route path="ranking-list" getComponent={(nextState, cb) => {
+                    require.ensure([], function() {
+                        let RankingList = require('./components/mainbody/ranking-list').default;
+                        cb(null, RankingList);
+                    });
+                }}/>
+                <Route path="my-focus" getComponent={(nextState, cb) => {
+                    require.ensure([], function() {
+                        let MyFocus = require('./components/mainbody/my-focus').default;
+                        cb(null, MyFocus);
+                    });
+                }}/>
+                <Route path="webgame-center" getComponent={(nextState, cb) => {
+                    require.ensure([], function() {
+                        let WebgameCenter = require('./components/mainbody/webgame-center').default;
+                        cb(null, WebgameCenter);
+                    });
+                }}/>
              </Route>
           </Router>
 }
