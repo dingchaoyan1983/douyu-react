@@ -1,9 +1,9 @@
 import React from 'react';
 import classname from 'classname';
 
-const {Component, Children, cloneElement} = React;
+const {PureComponent, Children, cloneElement} = React;
 
-export default class SidebarTabs extends Component {
+export default class SidebarTabs extends PureComponent {
     constructor(props, context) {
         super(props, context);
         this.state = {

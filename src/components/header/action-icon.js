@@ -1,9 +1,9 @@
 import React from 'react';
 import classname from 'classname';
 
-const {Children, Component} = React;
+const {Children, PureComponent} = React;
 
-export default class ActionIcon extends Component {
+export default class ActionIcon extends PureComponent {
     constructor(props, context) {
         super(props, context);
         this.state = {

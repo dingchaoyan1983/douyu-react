@@ -1,9 +1,9 @@
 import React from 'react';
 import classname from 'classname';
 
-const {Component, Children} = React;
+const {PureComponent, Children} = React;
 
-export default class NavItem extends Component {
+export default class NavItem extends PureComponent {
     constructor(props, context) {
         super(...arguments);
         this.state= {

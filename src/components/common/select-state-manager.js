@@ -1,8 +1,8 @@
 import React from 'react';
 
-const {Component, Children, cloneElement} = React;
+const {PureComponent, Children, cloneElement} = React;
 
-export default class SelectStateManager extends Component {
+export default class SelectStateManager extends PureComponent {
     constructor(props, context) {
         super(props, context);
         this.state = {
