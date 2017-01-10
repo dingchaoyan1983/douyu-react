@@ -1,7 +1,7 @@
 import React from 'react';
 import ActionIcon from './action-icon';
 
-export default function HeaderOther(props) {
+export default function HeaderAction(props) {
     return <div className="head-oth fr">
                 <div className="o-search fl">
                     <input className="s-ipt fl" type="text" autocomplete="off" placeholder="搜房间/主播/分类" value="" id="suggest-search"/>

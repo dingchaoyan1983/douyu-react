@@ -15,3 +15,4 @@ const ROOT = 'container';
 ReactDOM.render(<Provider store={store}>
                     <Router/>
                 </Provider>, document.getElementById(ROOT));
+                
